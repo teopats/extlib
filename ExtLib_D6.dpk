@@ -1,0 +1,44 @@
+package ExtLib_D6;
+
+{$R *.res}
+{$R 'ExtLib.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Extension library'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl;
+
+contains
+  ELDsgnr in 'ELDsgnr.pas',
+  ELSConsts in 'ELSConsts.pas',
+  ELControls in 'ELControls.pas',
+  ELUtils in 'ELUtils.pas',
+  ELPropInsp in 'ELPropInsp.pas',
+  ELDgrm in 'ELDgrm.pas',
+  ELStringsEdit in 'ELStringsEdit.pas' {ELStringsEditorDlg};
+
+end.
