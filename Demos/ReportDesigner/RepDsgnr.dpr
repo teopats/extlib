@@ -12,7 +12,6 @@
 program RepDsgnr;
 
 uses
-  madExcept,
   Forms,
   frmMainUnit in 'frmMainUnit.pas' {frmMain},
   dlgDataUnit in 'dlgDataUnit.pas' {dlgData},
